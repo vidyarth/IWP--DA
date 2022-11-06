@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSNL form</title>
+    <style>
+        body {
+            margin-left: 80px;
+            font-family: Helvetica;
+        }
+        .head-1{
+            position: relative;
+            font-size:14px;
+            text-align:center;
+        }
+        .head-2{
+            position: relative;
+            font-size:10px;
+            text-align: center;
+        }
+        .logo{
+            position: absolute;
+        }
+        .check1{
+            font-weight: bold;
+            padding-top:20px;
+        }
+        #text{
+            background-image: url("http://3.bp.blogspot.com/-4oAWWCcNNz4/Tjr3nKNyVUI/AAAAAAAAPLU/Pouua-pNsEY/s1600/sq.gif");    
+            width: 155px;
+            height: 18px;
+            background-size: 20px;
+            border: none;
+            font-family: monospace;
+            font-size: 13px;
+            padding-left: 5px;
+            letter-spacing: 12px;
+        }
+        .foot{
+            text-align: justify;
+            margin-right: 70px;
+        }
+        .sign{
+            display: flex;
+            justify-content: space-between;
+            margin-right : 70px;
+        }
+        .address{
+            display: flex;
+            justify-content: space-between;
+            margin-right : 300px;
+        }
+        input[type=text]{
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        .photo{
+            position: absolute;
+            top: 30px;
+            left: 82%;
+            width: 120px;
+            height: 120px;
+            border: 2px solid black;
+            font-size:14px;
+            text-align: center;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="bsnl.jpeg" alt="logo">
+    </div>
+    <div class="head-1">
+        <h1>BHARAT SANCHAR NIGAM LIMITED</h1>
+    </div>
+    <div class="head-1">
+        <h2>FORM FOR FIBER BASED SERVICES NEW  CONNECTION</h2>
+    </div>
+    <div class="photo">
+        Affix self signed passport size photograph (required for FTTH facility only)
+    </div>
+    <form action="">
+        <div class="check1">
+            <label for="comp">Companies / Organizations </label>
+            <input type="checkbox" name = "company">
+            <label for="ind">Individual </label>
+            <input type="checkbox" name = "ind">
+        </div>
+        <div class="customer">
+            Whether Existing Customer of BSNL
+            <input type="checkbox" name = "Y">
+            <label for="Y">Yes</label>
+            <input type="checkbox" name = "N">
+            <label for="N">No</label>
+            &nbsp; &nbsp; if Yes provide the Account number
+            <input type="text">
+        </div>
+        <div class="one">
+            <p>1. A. Title/Name of the Customer/Company/Firm/Orgranization 
+            <input type="text"></p>
+            &nbsp;&nbsp;&nbsp; B. Name of the Joint Applicant, if any :- 
+            <input type="text">
+        </div>
+        <div class="two">
+            <p>2.	Name of Father/ Husband/ Group/ Proprietor/ Partner(s) 
+            <input type="text"></p>
+        </div>
+        <div class="three">
+            <p>3.   Nominee Name:- 
+            <input type="text"></p>
+        </div>
+        <div class="four">
+            <p>4.   PAN/GIR No:
+            <input type="text" id="text"></p>
+        </div>
+        <div class="five">
+            <p>5.   Contact Number , if any: Home - 
+            <input type="text"> Business - <input type="text">
+            &nbsp; &nbsp; Mobile <input type="text"> </p>
+        </div>
+        <div class="six">
+            <p>6.   Complete Address where service(s) is/ are required: </p>
+            <div class="address">
+                <div class="add-one">
+                    <p>House No : <input type="text"></p>
+                    <p>Bldg/appartment : <input type="text"></p>
+                    <p>City/District : <input type="text"></p>
+                </div>
+                <div class="add-two">
+                    <p>Street/Road/Village : <input type="text"></p>
+                    <p>Area/Locality/Tehsil : <input type="text"></p>
+                    <p>Pin : <input type="text"></p>
+                </div>
+            </div>
+        <div class="seven">
+            <p>7.  Billing/ Correspondence Address (if different from 5 above)</p>
+            <div class="address">
+                <div class="add-one">
+                    <p>House No : <input type="text"></p>
+                    <p>Bldg/appartment : <input type="text"></p>
+                    <p>City/District : <input type="text"></p>
+                </div>
+                <div class="add-two">
+                    <p>Street/Road/Village : <input type="text"></p>
+                    <p>Area/Locality/Tehsil : <input type="text"></p>
+                    <p>Pin : <input type="text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="eight">
+            8.   E-mail address (if any): <input type="text"> @ <input type="text">
+        </div>
+        <div class="nine-ten">
+            <p>9.   Gender :-  
+            <input type="checkbox" name = "Y">
+            <label for="Y">Male</label>
+            <input type="checkbox" name = "N">
+            <label for="N">Female</label>
+            &nbsp; &nbsp; 10. Date  
+            <input type="text" maxlength ="8" id="text"> </p>
+        </div>
+        <div class="11">
+            11.   Wheather the applicant is a retired or working Employee of Govt./PSU/CPSU/ &nbsp; &nbsp;
+            <input type="checkbox" name = "Y">
+            <label for="Y">Yes</label>
+            <input type="checkbox" name = "N">
+            <label for="N">No</label>
+        </div>
+        <br>
+        <div class="12">
+            12.   Purpose: &nbsp; &nbsp;	
+            <input type="checkbox" name = "Y">
+            <label for="Y">Residence</label>
+            <input type="checkbox" name = "N">
+            <label for="N">PSU</label>
+            <input type="checkbox" name = "Y">
+            <label for="Y">Government</label>
+            <input type="checkbox" name = "N">
+            <label for="N">Business</label>
+        </div>
+        <br>
+        <div class="13">
+            13.   Service Type: &nbsp; &nbsp;	
+            <input type="checkbox" name = "Y">
+            <label for="Y">VIDEO</label>
+            <input type="checkbox" name = "N">
+            <label for="N">Broadband</label>
+            <input type="checkbox" name = "Y">
+            <label for="Y">IPTV/Cable TV</label>
+            <input type="checkbox" name = "N">
+            <label for="N">Telephone</label>
+        </div>
+        <br>
+        <div class="14">
+            14.   Number of connections required: &nbsp; &nbsp;	
+            <input type="number" name = "Y" style="width: 30px;">
+            <label for="Y">VIDEO</label>
+            <input type="number" name = "Y" style="width: 30px;">
+            <label for="N">Broadband</label>
+            <input type="number" name = "Y" style="width: 30px;">
+            <label for="Y">IPTV/Cable TV</label>
+            <input type="number" name = "Y" style="width: 30px;">
+            <label for="N">Telephone</label>
+        </div>
+        <br>
+        <div class="15">
+            <p>15.a  Facilities Required on Telephones
+            <input type="checkbox" name = "Y">
+            <label for="Y">STD</label>
+            <input type="checkbox" name = "N">
+            <label for="N">ISD</label>
+            <input type="checkbox" name = "Y">
+            <label for="Y">CLI</label>
+            <input type="checkbox" name = "N">
+            <label for="N">Hotline</label></p>
+            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="checkbox" name = "Y">
+            <label for="Y">Conferencing</label>
+            <input type="checkbox" name = "N">
+            <label for="N">Call forwarding</label>
+            <input type="checkbox" name = "Y">
+            <label for="Y">Hunting facility</label>
+            <input type="checkbox" name = "N">
+            <label for="N">Abbreviated dialing</label></p>
+            <p>&nbsp; &nbsp; Facilities Required on Video 
+                <input type="checkbox" name = "Y">
+                <label for="Y">Video conferencing</label>
+                <input type="checkbox" name = "N">
+                <label for="N">Video calls</label>
+                <input type="checkbox" name = "Y">
+                <label for="Y">Others</label>
+        </div>
+        <div class="16-17">
+            16.  Whether Telephone instrument is required:
+            <input type="checkbox" name = "Y">
+            <label for="Y">Yes</label>
+            <input type="checkbox" name = "N">
+            <label for="N">No</label>
+            17.  Whether STB is required:
+            <input type="checkbox" name = "Y">
+            <label for="Y">Yes</label>
+            <input type="checkbox" name = "N">
+            <label for="N">No</label>
+        </div>
+        <br>
+        <div class="18">
+            18.  Type of ONT:
+            <input type="checkbox" name = "Y">
+            <label for="Y">Type A</label>
+            <input type="checkbox" name = "N">
+            <label for="N">Type B</label>
+        </div>
+        <br>
+        <div class="19a">
+            19.  a Mention the tariff package required for 
+            <label for="Y">Broadband</label>
+            <input type="text" name = "N">
+            <label for="N">IPTV</label>
+            <input type="text" name = "N">
+            <label for="N">Telephone</label>
+            <input type="text" name = "N">
+        </div>
+        <br>
+        <div class="19b">
+            &nbsp; &nbsp; b. Bill Frequency
+            <input type="checkbox" name = "Y">
+            <label for="Y">Monthly</label>
+            <input type="checkbox" name = "N">
+            <label for="N">yearly</label>
+            <input type="checkbox" name = "N">
+            <label for="N">Five Yearly</label>
+        </div>
+        <br>
+        <div class="20a">
+            20.  Payment Mode:
+            <input type="checkbox" name = "Y">
+            <label for="Y">Cash</label>
+            <input type="checkbox" name = "N">
+            <label for="N">DD</label>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <label for="N">Amount</label>
+            <input type="text" name = "N">
+        </div>
+        <br>
+        <div class="20-b">
+            &nbsp; &nbsp; Payment Details :
+            <label for="N">DD No: </label>
+            <input type="text" name = "N">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <label for="N">Dated </label>
+            <input type="text" name = "N">
+        </div>
+        <br>
+        <div class="20-c">
+            &nbsp; &nbsp; Drawn on :
+            <label for="N">Bank </label>
+            <input type="text" name = "N">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <label for="N">Branch : </label>
+            <input type="text" name = "N">
+        </div>
+        <br>
+        <div class="foot">
+            <p>
+                I hereby declare that information given above is true to the best of my knowledge and I will abide by the prevailing Telegraph Act/ Rules framed thereunder & Tariffs as amended from time to time. I am not a defaulter on account of non-payment of bills for any telecom services provided by any service provider. In the event of any dispute concerning any telecom line, apparatus or appliance, bill etc., between me/us and BSNL, the matter will be referred to the sole Arbitrator, appointed by a nominated authority in BSNL and shall be governed by the provisions of the Arbitration and Conciliation Act, 1996.
+            </p>
+        </div>
+        <div class="sign">
+            <div class="sign-1">
+                <h4>Signature of Customer/ Authorized Signatory</h4>
+                <label for="N">Signed on </label>
+                <input type="text" name = "N">
+            </div>
+            <div class="sign-2">
+                <h4>Signature of Customer/ Authorized Signatory</h4>
+                <label for="N">Date </label>
+                <input type="text" name = "N">
+            </div>
+        </div>
+
+        
+
+
+    </form>
+    
+</body>
+</html>
